@@ -21,9 +21,9 @@ services:
       - DB_PORT=5002
       - DB_USER=root
       - DB_PASSWORD=Flexxus2023**
-      - DB_NAME=sistema_rrhh
+      - DB_NAME=sistema_rrhh_demo
       - JWT_SECRET=your_jwt_secret_key_minimum_32_chars
-      - FRONTEND_URL=https://rrhh-prueba.flexxus.com.ar
+      - FRONTEND_URL=https://rrhh.flexxus.com.ar
       - EMAIL_ENABLED=false
       - SMTP_HOST=smtp.gmail.com
       - SMTP_PORT=587
@@ -34,8 +34,8 @@ services:
       - VPN_ENDPOINT_REMOTE=https://10.150.253.253/api/?type=op&cmd=%3Cshow%3E%3Cglobal-protect-gateway%3E%3Ccurrent-user%3E%3Cgateway%3EGW-Flexxus_TELECOM%3C/gateway%3E%3C/current-user%3E%3C/global-protect-gateway%3E%3C/show%3E&key=LUFRPT14bmhIMG8vVkVQR25rbFI2L1FCTlp0MEs5dGc9Rmx0RzAwREx0anRFakg3cEdYdHppQ3l3NXVCSzZ3L1haeUtvNExISDQ5cDZGVGdjOGV3QnpoSkEvSDEzeGpXOVFPRmEyVkFJQnFhVE5LTG83ejFMckE9PQ==
       - VPN_ENDPOINT_PROCOM_REMOTO=https://10.150.253.253/api/?type=op&cmd=%3Cshow%3E%3Cglobal-protect-gateway%3E%3Ccurrent-user%3E%3Cgateway%3EGW-CLARO%3C/gateway%3E%3C/current-user%3E%3C/global-protect-gateway%3E%3C/show%3E&key=LUFRPT14bmhIMG8vVkVQR25rbFI2L1FCTlp0MEs5dGc9Rmx0RzAwREx0anRFakg3cEdYdHppQ3l3NXVCSzZ3L1haeUtvNExISDQ5cDZGVGdjOGV3QnpoSkEvSDEzeGpXOVFPRmEyVkFJQnFhVE5LTG83ejFMckE9PQ==
       - VPN_ENDPOINT_PROCOM_PRESENCIAL=https://10.150.253.253/api/?type=op&cmd=%3Cshow%3E%3Cglobal-protect-gateway%3E%3Ccurrent-user%3E%3Cgateway%3EGW-Internal%3C/gateway%3E%3C/current-user%3E%3C/global-protect-gateway%3E%3C/show%3E&key=LUFRPT14bmhIMG8vVkVQR25rbFI2L1FCTlp0MEs5dGc9Rmx0RzAwREx0anRFakg3cEdYdHppQ3l3NXVCSzZ3L1haeUtvNExISDQ5cDZGVGdjOGV3QnpoSkEvSDEzeGpXOVFPRmEyVkFJQnFhVE5LTG83ejFMckE9PQ==
-      - DB_POOL_LIMIT=60
-      - DB_ACQUIRE_TIMEOUT_MS=40000 
+      - DB_POOL_LIMIT=40
+      - DB_ACQUIRE_TIMEOUT_MS=40000
       - S2S_API_KEY=una-clave-segura-generada
     ports:
       - "5030:3001"
