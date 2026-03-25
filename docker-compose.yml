@@ -37,6 +37,7 @@ services:
       - DB_POOL_LIMIT=40
       - DB_ACQUIRE_TIMEOUT_MS=40000
       - S2S_API_KEY=una-clave-segura-generada
+      - GOOGLE_PLACES_API_KEY=AIzaSyCUnPTyiaWy8eP2ravAZyrarA9zcPVG9h8
     ports:
       - "5030:3001"
     volumes:
